@@ -1,0 +1,66 @@
+/* App.css */
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; /* Prevent horizontal scrollbars */
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.dashboard {
+  display: flex; /* Ensure the sidebar and main content are side by side */
+  height: 100vh; /* Full height of the viewport */
+  width: 100; /* Full width of the viewport */
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  width: 100%;
+  flex-grow: 1; /* This ensures the main content takes up all remaining space */
+  background-color: #f4f4f4;
+  padding: 40px;
+  box-sizing: border-box; /* Include padding in element's total width/height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu .icon {
+  margin-right: 10px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  padding: 5px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 0; /* Removed border radius */
+}

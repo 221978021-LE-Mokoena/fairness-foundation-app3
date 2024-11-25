@@ -10,13 +10,17 @@
   height: 100vh; /* Full height of the sidebar */
 }
 
+
 .logout-container {
-  margin-top: 20px; /* Adjust the space between the menu and logout button */
+  position: absolute;
+  bottom: 70px; /* Adjust this value to move the logout button up or down */
+  left: 20px;
+  width: 11%; /* Ensure it still fits */
   text-align: center;
 }
 
 .logout-button {
-  background-color: #e74c3c;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -33,14 +37,20 @@
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
 
 .logo-image {
-  width: 100px;
+  width: 50px;
   height: auto;
+  margin-right: 10px; /* Space between the logo and the heading */
+}
+
+.logo-heading {
+  font-size: 18px; /* Adjust the size of the heading */
+  font-weight: 600; /* Adjust font weight */
+  color: #333; /* Adjust color if needed */
 }
 
 .menu {
